@@ -1,0 +1,108 @@
+$bgColor : #FAFBFD;
+$fSizeT : 44px;
+$fWeightT :700;
+$fSizeS : 12px;
+$fWeigjtS : 400;
+$fColorS: #616161;
+$fSizeBtn : 12px;
+$fWeightBtn : 700;
+$container: 1300px;
+body {
+    background-color: $bgColor;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    margin-top: 37px;
+    height: 100vh;
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .menu {
+        display: flex;
+        gap: 40px;
+         a {
+            text-transform: uppercase;
+            font-size: $fSizeBtn;
+            font-weight: $fWeightT;
+            line-height: 12px;
+            letter-spacing: 1px;
+            color: black;
+            text-align: center;
+        }
+    }
+    .header-btn {
+        border-radius: 5px;
+        background-color: #4585f4;
+        button {
+            text-transform: uppercase;
+            color:white;
+            padding: 12px 30px;
+        }
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .header-content__text {
+            max-width: 400px;
+        }
+        .header-content-title {
+            font-size: $fSizeT;
+            font-weight: $fWeightT;
+            line-height: 55px;
+            margin-bottom: 14px;
+            span {
+                color: #4585f4
+            }
+        }
+        .header-content-subtitle {
+            color: $fColorS;
+            font-weight: $fWeigjtS;
+            margin-bottom: 33px;
+        }
+        .header-content-btn {
+            
+            a {
+                background-color: #ec5863;
+                padding: 12px 26px;
+                border-radius:  6px;
+            }
+        }
+    }
+    .header-watch {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 100px;
+        max-width: 400px;
+        justify-content: center;
+        .video-text {
+            margin-left: 13px;
+            p {
+                font-size: $fSizeS;
+            color: $fColorS;
+            margin-bottom: 3px;
+            opacity: .8;
+            letter-spacing: 1px;
+            }
+            .video-subtitle {
+                p {
+                    text-decoration: uppercase;
+                    color: black;
+                }
+            }
+        }
+    }
+}
